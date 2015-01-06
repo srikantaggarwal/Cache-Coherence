@@ -1,0 +1,100 @@
+CSX290 Sim - Begins   Cores: 4 Protocol: MSI_PRO
+* FETCH -- PR: 0 -- Clock: 0 -- w 0xdeadbeef
+* FETCH -- PR: 1 -- Clock: 0 -- r 0xdeadbeef
+* FETCH -- PR: 2 -- Clock: 0 -- w 0xdeadbeef
+* FETCH -- PR: 3 -- Clock: 0 -- r 0x0
+** PROC REQUEST -- node:  0/L1   src:  0/PR  dest:  None tag: 0x 37ab6fb clock:        1     STORE
+** PROC REQUEST -- node:  1/L1   src:  1/PR  dest:  None tag: 0x 37ab6fb clock:        1      LOAD
+** PROC REQUEST -- node:  2/L1   src:  2/PR  dest:  None tag: 0x 37ab6fb clock:        1     STORE
+** PROC REQUEST -- node:  3/L1   src:  3/PR  dest:  None tag: 0x       0 clock:        1      LOAD
+*** SNOOP REQUEST -- node:  0/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:        2      GETM
+*** SNOOP REQUEST -- node:  1/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:        2      GETM
+*** SNOOP REQUEST -- node:  2/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:        2      GETM
+*** SNOOP REQUEST -- node:  3/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:        2      GETM
+**** DATA SEND MC -- Clock: 102
+*** SNOOP REQUEST -- node:  0/L1   src:  4/MC  dest:  0/L1  tag: 0x 37ab6fb clock:      103      DATA
+*** SNOOP REQUEST -- node:  0/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      104      GETS
+**** DATA_SEND Cache: 0 -- Clock: 104
+*** SNOOP REQUEST -- node:  1/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      104      GETS
+*** SNOOP REQUEST -- node:  2/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      104      GETS
+*** SNOOP REQUEST -- node:  3/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      104      GETS
+* COMPLETE -- PR: 0 -- Clock: 104
+* FETCH -- PR: 0 -- Clock: 104 -- w 0xdeadbeef
+** PROC REQUEST -- node:  0/L1   src:  0/PR  dest:  None tag: 0x 37ab6fb clock:      105     STORE
+*** SNOOP REQUEST -- node:  1/L1   src:  0/L1  dest:  1/L1  tag: 0x 37ab6fb clock:      105      DATA
+*** SNOOP REQUEST -- node:  0/L1   src:  2/L1  dest:  None tag: 0x 37ab6fb clock:      106      GETM
+*** SNOOP REQUEST -- node:  1/L1   src:  2/L1  dest:  None tag: 0x 37ab6fb clock:      106      GETM
+*** SNOOP REQUEST -- node:  2/L1   src:  2/L1  dest:  None tag: 0x 37ab6fb clock:      106      GETM
+*** SNOOP REQUEST -- node:  3/L1   src:  2/L1  dest:  None tag: 0x 37ab6fb clock:      106      GETM
+* COMPLETE -- PR: 1 -- Clock: 106
+* FETCH -- PR: 1 -- Clock: 106 -- w 0xdeadbeef
+** PROC REQUEST -- node:  1/L1   src:  1/PR  dest:  None tag: 0x 37ab6fb clock:      107     STORE
+**** DATA SEND MC -- Clock: 206
+*** SNOOP REQUEST -- node:  2/L1   src:  4/MC  dest:  2/L1  tag: 0x 37ab6fb clock:      207      DATA
+*** SNOOP REQUEST -- node:  0/L1   src:  3/L1  dest:  None tag: 0x       0 clock:      208      GETS
+*** SNOOP REQUEST -- node:  1/L1   src:  3/L1  dest:  None tag: 0x       0 clock:      208      GETS
+*** SNOOP REQUEST -- node:  2/L1   src:  3/L1  dest:  None tag: 0x       0 clock:      208      GETS
+*** SNOOP REQUEST -- node:  3/L1   src:  3/L1  dest:  None tag: 0x       0 clock:      208      GETS
+* COMPLETE -- PR: 2 -- Clock: 208
+* FETCH -- PR: 2 -- Clock: 208 -- r 0xdeadbeef
+** PROC REQUEST -- node:  2/L1   src:  2/PR  dest:  None tag: 0x 37ab6fb clock:      209      LOAD
+* COMPLETE -- PR: 2 -- Clock: 210
+* FETCH -- PR: 2 -- Clock: 210 -- r 0xdeadbeef
+** PROC REQUEST -- node:  2/L1   src:  2/PR  dest:  None tag: 0x 37ab6fb clock:      211      LOAD
+* COMPLETE -- PR: 2 -- Clock: 212
+**** DATA SEND MC -- Clock: 308
+*** SNOOP REQUEST -- node:  3/L1   src:  4/MC  dest:  3/L1  tag: 0x       0 clock:      309      DATA
+*** SNOOP REQUEST -- node:  0/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      310      GETM
+*** SNOOP REQUEST -- node:  1/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      310      GETM
+*** SNOOP REQUEST -- node:  2/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      310      GETM
+**** DATA_SEND Cache: 2 -- Clock: 310
+*** SNOOP REQUEST -- node:  3/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      310      GETM
+* COMPLETE -- PR: 3 -- Clock: 310
+* FETCH -- PR: 3 -- Clock: 310 -- r 0x0
+*** SNOOP REQUEST -- node:  0/L1   src:  2/L1  dest:  0/L1  tag: 0x 37ab6fb clock:      311      DATA
+** PROC REQUEST -- node:  3/L1   src:  3/PR  dest:  None tag: 0x       0 clock:      311      LOAD
+*** SNOOP REQUEST -- node:  0/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      312      GETM
+**** DATA_SEND Cache: 0 -- Clock: 312
+*** SNOOP REQUEST -- node:  1/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      312      GETM
+*** SNOOP REQUEST -- node:  2/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      312      GETM
+*** SNOOP REQUEST -- node:  3/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      312      GETM
+* COMPLETE -- PR: 0 -- Clock: 312
+* FETCH -- PR: 0 -- Clock: 312 -- r 0xdeadbeef
+* COMPLETE -- PR: 3 -- Clock: 312
+* FETCH -- PR: 3 -- Clock: 312 -- r 0x0
+** PROC REQUEST -- node:  0/L1   src:  0/PR  dest:  None tag: 0x 37ab6fb clock:      313      LOAD
+*** SNOOP REQUEST -- node:  1/L1   src:  0/L1  dest:  1/L1  tag: 0x 37ab6fb clock:      313      DATA
+** PROC REQUEST -- node:  3/L1   src:  3/PR  dest:  None tag: 0x       0 clock:      313      LOAD
+*** SNOOP REQUEST -- node:  0/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      314      GETS
+*** SNOOP REQUEST -- node:  1/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      314      GETS
+**** DATA_SEND Cache: 1 -- Clock: 314
+*** SNOOP REQUEST -- node:  2/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      314      GETS
+*** SNOOP REQUEST -- node:  3/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      314      GETS
+* COMPLETE -- PR: 1 -- Clock: 314
+* FETCH -- PR: 1 -- Clock: 314 -- r 0xdeadbeef
+* COMPLETE -- PR: 3 -- Clock: 314
+*** SNOOP REQUEST -- node:  0/L1   src:  1/L1  dest:  0/L1  tag: 0x 37ab6fb clock:      315      DATA
+** PROC REQUEST -- node:  1/L1   src:  1/PR  dest:  None tag: 0x 37ab6fb clock:      315      LOAD
+* COMPLETE -- PR: 0 -- Clock: 316
+* COMPLETE -- PR: 1 -- Clock: 316
+
+
+Simulation Finished
+Cache 0 Contents:
+Addr: 0x0 MSI_protocol - state: I
+Addr: 0xdeadbec0 MSI_protocol - state: S
+Cache 1 Contents:
+Addr: 0x0 MSI_protocol - state: I
+Addr: 0xdeadbec0 MSI_protocol - state: S
+Cache 2 Contents:
+Addr: 0x0 MSI_protocol - state: I
+Addr: 0xdeadbec0 MSI_protocol - state: I
+Cache 3 Contents:
+Addr: 0x0 MSI_protocol - state: S
+Addr: 0xdeadbec0 MSI_protocol - state: I
+
+Run Time:              317 cycles
+Cache Misses:            7 misses
+Cache Accesses:         12 accesses
+Silent Upgrades:         0 upgrades
+$-to-$ Transfers:        4 transfers

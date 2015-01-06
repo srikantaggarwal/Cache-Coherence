@@ -1,0 +1,11 @@
+This code belongs to AKSHAY SUBHASH SAWANT, student, Georgia Institute of Technology.
+
+The code is in the 'protocols' folder and named as MSI_protocol.cpp, MSI_protocol.hpp, etc.
+
+The traces are present in the Traces folder.
+
+Run the program using the make file.
+
+The outputs are stored in the 'Experiments_Outputs' and 'Validation_Outputs' folder.
+
+You can also download and view the Project Report. It is named, 'Cache Coherence.pdf'

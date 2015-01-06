@@ -1,0 +1,100 @@
+CSX290 Sim - Begins   Cores: 4 Protocol: MOSI_PRO
+* FETCH -- PR: 0 -- Clock: 0 -- w 0xdeadbeef
+* FETCH -- PR: 1 -- Clock: 0 -- r 0xdeadbeef
+* FETCH -- PR: 2 -- Clock: 0 -- w 0xdeadbeef
+* FETCH -- PR: 3 -- Clock: 0 -- r 0x0
+** PROC REQUEST -- node:  0/L1   src:  0/PR  dest:  None tag: 0x 37ab6fb clock:        1     STORE
+** PROC REQUEST -- node:  1/L1   src:  1/PR  dest:  None tag: 0x 37ab6fb clock:        1      LOAD
+** PROC REQUEST -- node:  2/L1   src:  2/PR  dest:  None tag: 0x 37ab6fb clock:        1     STORE
+** PROC REQUEST -- node:  3/L1   src:  3/PR  dest:  None tag: 0x       0 clock:        1      LOAD
+*** SNOOP REQUEST -- node:  0/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:        2      GETM
+*** SNOOP REQUEST -- node:  1/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:        2      GETM
+*** SNOOP REQUEST -- node:  2/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:        2      GETM
+*** SNOOP REQUEST -- node:  3/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:        2      GETM
+**** DATA SEND MC -- Clock: 102
+*** SNOOP REQUEST -- node:  0/L1   src:  4/MC  dest:  0/L1  tag: 0x 37ab6fb clock:      103      DATA
+*** SNOOP REQUEST -- node:  0/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      104      GETS
+**** DATA_SEND Cache: 0 -- Clock: 104
+*** SNOOP REQUEST -- node:  1/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      104      GETS
+*** SNOOP REQUEST -- node:  2/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      104      GETS
+*** SNOOP REQUEST -- node:  3/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      104      GETS
+* COMPLETE -- PR: 0 -- Clock: 104
+* FETCH -- PR: 0 -- Clock: 104 -- w 0xdeadbeef
+** PROC REQUEST -- node:  0/L1   src:  0/PR  dest:  None tag: 0x 37ab6fb clock:      105     STORE
+*** SNOOP REQUEST -- node:  1/L1   src:  0/L1  dest:  1/L1  tag: 0x 37ab6fb clock:      105      DATA
+*** SNOOP REQUEST -- node:  0/L1   src:  2/L1  dest:  None tag: 0x 37ab6fb clock:      106      GETM
+**** DATA_SEND Cache: 0 -- Clock: 106
+*** SNOOP REQUEST -- node:  1/L1   src:  2/L1  dest:  None tag: 0x 37ab6fb clock:      106      GETM
+*** SNOOP REQUEST -- node:  2/L1   src:  2/L1  dest:  None tag: 0x 37ab6fb clock:      106      GETM
+*** SNOOP REQUEST -- node:  3/L1   src:  2/L1  dest:  None tag: 0x 37ab6fb clock:      106      GETM
+* COMPLETE -- PR: 1 -- Clock: 106
+* FETCH -- PR: 1 -- Clock: 106 -- w 0xdeadbeef
+** PROC REQUEST -- node:  1/L1   src:  1/PR  dest:  None tag: 0x 37ab6fb clock:      107     STORE
+*** SNOOP REQUEST -- node:  2/L1   src:  0/L1  dest:  2/L1  tag: 0x 37ab6fb clock:      107      DATA
+*** SNOOP REQUEST -- node:  0/L1   src:  3/L1  dest:  None tag: 0x       0 clock:      108      GETS
+*** SNOOP REQUEST -- node:  1/L1   src:  3/L1  dest:  None tag: 0x       0 clock:      108      GETS
+*** SNOOP REQUEST -- node:  2/L1   src:  3/L1  dest:  None tag: 0x       0 clock:      108      GETS
+*** SNOOP REQUEST -- node:  3/L1   src:  3/L1  dest:  None tag: 0x       0 clock:      108      GETS
+* COMPLETE -- PR: 2 -- Clock: 108
+* FETCH -- PR: 2 -- Clock: 108 -- r 0xdeadbeef
+** PROC REQUEST -- node:  2/L1   src:  2/PR  dest:  None tag: 0x 37ab6fb clock:      109      LOAD
+* COMPLETE -- PR: 2 -- Clock: 110
+* FETCH -- PR: 2 -- Clock: 110 -- r 0xdeadbeef
+** PROC REQUEST -- node:  2/L1   src:  2/PR  dest:  None tag: 0x 37ab6fb clock:      111      LOAD
+* COMPLETE -- PR: 2 -- Clock: 112
+**** DATA SEND MC -- Clock: 208
+*** SNOOP REQUEST -- node:  3/L1   src:  4/MC  dest:  3/L1  tag: 0x       0 clock:      209      DATA
+*** SNOOP REQUEST -- node:  0/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      210      GETM
+*** SNOOP REQUEST -- node:  1/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      210      GETM
+*** SNOOP REQUEST -- node:  2/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      210      GETM
+**** DATA_SEND Cache: 2 -- Clock: 210
+*** SNOOP REQUEST -- node:  3/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      210      GETM
+* COMPLETE -- PR: 3 -- Clock: 210
+* FETCH -- PR: 3 -- Clock: 210 -- r 0x0
+*** SNOOP REQUEST -- node:  0/L1   src:  2/L1  dest:  0/L1  tag: 0x 37ab6fb clock:      211      DATA
+** PROC REQUEST -- node:  3/L1   src:  3/PR  dest:  None tag: 0x       0 clock:      211      LOAD
+*** SNOOP REQUEST -- node:  0/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      212      GETM
+**** DATA_SEND Cache: 0 -- Clock: 212
+*** SNOOP REQUEST -- node:  1/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      212      GETM
+*** SNOOP REQUEST -- node:  2/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      212      GETM
+*** SNOOP REQUEST -- node:  3/L1   src:  1/L1  dest:  None tag: 0x 37ab6fb clock:      212      GETM
+* COMPLETE -- PR: 0 -- Clock: 212
+* FETCH -- PR: 0 -- Clock: 212 -- r 0xdeadbeef
+* COMPLETE -- PR: 3 -- Clock: 212
+* FETCH -- PR: 3 -- Clock: 212 -- r 0x0
+** PROC REQUEST -- node:  0/L1   src:  0/PR  dest:  None tag: 0x 37ab6fb clock:      213      LOAD
+*** SNOOP REQUEST -- node:  1/L1   src:  0/L1  dest:  1/L1  tag: 0x 37ab6fb clock:      213      DATA
+** PROC REQUEST -- node:  3/L1   src:  3/PR  dest:  None tag: 0x       0 clock:      213      LOAD
+*** SNOOP REQUEST -- node:  0/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      214      GETS
+*** SNOOP REQUEST -- node:  1/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      214      GETS
+**** DATA_SEND Cache: 1 -- Clock: 214
+*** SNOOP REQUEST -- node:  2/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      214      GETS
+*** SNOOP REQUEST -- node:  3/L1   src:  0/L1  dest:  None tag: 0x 37ab6fb clock:      214      GETS
+* COMPLETE -- PR: 1 -- Clock: 214
+* FETCH -- PR: 1 -- Clock: 214 -- r 0xdeadbeef
+* COMPLETE -- PR: 3 -- Clock: 214
+*** SNOOP REQUEST -- node:  0/L1   src:  1/L1  dest:  0/L1  tag: 0x 37ab6fb clock:      215      DATA
+** PROC REQUEST -- node:  1/L1   src:  1/PR  dest:  None tag: 0x 37ab6fb clock:      215      LOAD
+* COMPLETE -- PR: 0 -- Clock: 216
+* COMPLETE -- PR: 1 -- Clock: 216
+
+
+Simulation Finished
+Cache 0 Contents:
+Addr: 0x0 MOSI_protocol - state: I
+Addr: 0xdeadbec0 MOSI_protocol - state: S
+Cache 1 Contents:
+Addr: 0x0 MOSI_protocol - state: I
+Addr: 0xdeadbec0 MOSI_protocol - state: O
+Cache 2 Contents:
+Addr: 0x0 MOSI_protocol - state: I
+Addr: 0xdeadbec0 MOSI_protocol - state: I
+Cache 3 Contents:
+Addr: 0x0 MOSI_protocol - state: S
+Addr: 0xdeadbec0 MOSI_protocol - state: I
+
+Run Time:              217 cycles
+Cache Misses:            7 misses
+Cache Accesses:         12 accesses
+Silent Upgrades:         0 upgrades
+$-to-$ Transfers:        5 transfers
